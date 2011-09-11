@@ -1,7 +1,14 @@
-## Smarty CI Helper
+##Smarty CI Helper
 Provides the ability to call CodeIgniter helper with Smarty syntax. 
 
-## Example Usage
+##Installation
+Place this file inside the smarty plugins directory.
+
+##Example Usage
+```html
+{ci name='helper_name' function='function_name' param1='function_param1' param2='function_param2'}
+```
+
 ```html
 <a href="{ci name='url' function='base_url'}">Site Base URL</a>
 ```
