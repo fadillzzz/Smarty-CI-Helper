@@ -28,12 +28,12 @@ function smarty_function_ci( $params, $smarty )
     if ( ! function_exists( $params['function']) ) 
     {
         $CI = get_instance();
-        $CI->load->helper( $params['name'] );
+        $CI->load->helper( $params['helper'] );
     }
 
     $func = $params['function'];
     unset( $params['function'] );
-    unset( $params['name'] );
+    unset( $params['helper'] );
     return call_user_func_array( $func, array_values( $params ) );
     
 }
