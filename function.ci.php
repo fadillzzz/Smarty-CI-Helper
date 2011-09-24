@@ -12,7 +12,7 @@
 
  /**
  Example usage:
- {ci name='url' function='base_url'}
+ {ci helper='url' function='base_url'}
 
  The above example will call the base_url() function from the URL helper of CodeIgniter
 
